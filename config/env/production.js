@@ -364,7 +364,7 @@ module.exports = {
   **************************************************************************/
   ssl: {
 
-    sslmode: 'require',
+    sslmode: 'no-verify',
     rejectUnauthorized: false,
 
   },
