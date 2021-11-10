@@ -9,8 +9,10 @@
     "@sailshq/lodash": "^3.10.3",
     "@sailshq/socket.io-redis": "^5.2.0",
     "connect-pg-simple": "^7.0.0",
+    "grunt": "^1.0.4",
     "sails": "^1.4.3",
     "sails-hook-apianalytics": "^2.0.3",
+    "sails-hook-grunt": "^4.0.1",
     "sails-hook-organics": "^2.0.0",
     "sails-hook-orm": "^3.0.2",
     "sails-hook-sockets": "^2.0.0",
@@ -19,9 +21,7 @@
   "devDependencies": {
     "eslint": "5.16.0",
     "htmlhint": "0.11.0",
-    "lesshint": "6.3.6",
-    "grunt": "1.0.4",
-    "sails-hook-grunt": "^4.0.0"
+    "lesshint": "6.3.6"
   },
   "scripts": {
     "start": "NODE_ENV=production node app.js",
