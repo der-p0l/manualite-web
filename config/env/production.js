@@ -47,8 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
-      // adapter: 'sails-mysql',
-      // url: 'mysql://user:password@host:port/database',
+      adapter: 'sails-postgresql',
+      // url: 'postgresql://user:password@host:port/database',
       //--------------------------------------------------------------------------
       //  /\   To avoid checking it in to version control, you might opt to set
       //  ||   sensitive credentials like `url` using an environment variable.
@@ -70,7 +70,7 @@ module.exports = {
       * https://sailsjs.com/config/datastores                                     *
       *                                                                           *
       ****************************************************************************/
-      // ssl: true,
+      ssl: true,
 
     },
 
@@ -101,7 +101,7 @@ module.exports = {
     * choose to keep this enabled.)                                            *
     *                                                                          *
     ***************************************************************************/
-    // cascadeOnDestroy: false,
+    cascadeOnDestroy: false,
 
   },
 
@@ -184,8 +184,9 @@ module.exports = {
     * > (For a full list, see https://sailsjs.com/plugins/sessions)            *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/connect-redis',
-    // url: 'redis://user:password@localhost:6379/databasenumber',
+    adapter: 'connect-pg-simple',
+    // url: 'postgresql://user:password@host:port/database',
+    // conString: 'postgresql://user:password@host:port/database',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
     // ||   set sensitive credentials like this using an environment variable.
@@ -221,7 +222,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-      // secure: true,
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -325,7 +326,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
 
   },
 
@@ -374,8 +375,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
-    internalEmailAddress: 'support@example.com',
+    baseUrl: 'https://manualite.xyz',
+    internalEmailAddress: 'support@manualite.xyz',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
     // stripeSecret: 'sk_prod__fake_Nfgh82401348jaDa3lkZ0d9Hm',
