@@ -362,7 +362,12 @@ module.exports = {
   * > https://sailsjs.com/config/*#?sailsconfigssl                          *
   *                                                                         *
   **************************************************************************/
-  // ssl: undefined,
+  ssl: {
+
+    sslmode: 'require',
+    rejectUnauthorized: false,
+
+  },
 
 
 
